@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1752cb6d-58ad-4c74-a152-fc888efc21cc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/MovieNetwork$2.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/CommonManager$Employee.class" afterPath="$PROJECT_DIR$/out/production/untitled/CommonManager$Employee.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/CommonManager.class" afterPath="$PROJECT_DIR$/out/production/untitled/CommonManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/MovieNetwork$1.class" afterPath="$PROJECT_DIR$/out/production/untitled/MovieNetwork$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/MovieNetwork$Movie.class" afterPath="$PROJECT_DIR$/out/production/untitled/MovieNetwork$Movie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/MovieNetwork.class" afterPath="$PROJECT_DIR$/out/production/untitled/MovieNetwork.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/FindDistanceBetweenTwoNods.class" afterPath="$PROJECT_DIR$/out/production/untitled/FindDistanceBetweenTwoNods.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/Node.class" afterPath="$PROJECT_DIR$/out/production/untitled/Node.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CommonManager.java" afterPath="$PROJECT_DIR$/src/CommonManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MovieNetwork.java" afterPath="$PROJECT_DIR$/src/MovieNetwork.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FindDistanceBetweenTwoNods.java" afterPath="$PROJECT_DIR$/src/FindDistanceBetweenTwoNods.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,18 +17,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="FindDistanceBetweenTwoNods.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FindDistanceBetweenTwoNods.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,13 +43,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/FIndMinStepInMaze.java" />
-        <option value="$PROJECT_DIR$/src/FindDistanceBetweenTwoNods.java" />
         <option value="$PROJECT_DIR$/src/BaseballScoring.java" />
         <option value="$PROJECT_DIR$/src/ValidParenthese.java" />
         <option value="$PROJECT_DIR$/src/FindAllAnagramsString.java" />
         <option value="$PROJECT_DIR$/src/FiindMinStepInMaze.java" />
         <option value="$PROJECT_DIR$/src/MovieNetwork.java" />
         <option value="$PROJECT_DIR$/src/CommonManager.java" />
+        <option value="$PROJECT_DIR$/src/FindDistanceBetweenTwoNods.java" />
       </list>
     </option>
   </component>
@@ -168,25 +151,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CommonManager">
+  <component name="RunManager" selected="Application.FindDistanceBetweenTwoNods">
     <configuration default="false" name="CommonManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="CommonManager" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="untitled" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ValidParenthese" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ValidParenthese" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -232,6 +200,21 @@
     <configuration default="false" name="MovieNetwork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="MovieNetwork" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="untitled" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FindDistanceBetweenTwoNods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="FindDistanceBetweenTwoNods" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -603,18 +586,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.CommonManager" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ValidParenthese" />
-      <item index="2" class="java.lang.String" itemvalue="Application.FindAllAnagramsString" />
-      <item index="3" class="java.lang.String" itemvalue="Application.FiindMinStepInMaze" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MovieNetwork" />
+      <item index="1" class="java.lang.String" itemvalue="Application.FindAllAnagramsString" />
+      <item index="2" class="java.lang.String" itemvalue="Application.FiindMinStepInMaze" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MovieNetwork" />
+      <item index="4" class="java.lang.String" itemvalue="Application.FindDistanceBetweenTwoNods" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CommonManager" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MovieNetwork" />
-        <item index="2" class="java.lang.String" itemvalue="Application.FiindMinStepInMaze" />
-        <item index="3" class="java.lang.String" itemvalue="Application.FindAllAnagramsString" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ValidParenthese" />
+        <item index="0" class="java.lang.String" itemvalue="Application.FindDistanceBetweenTwoNods" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CommonManager" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MovieNetwork" />
+        <item index="3" class="java.lang.String" itemvalue="Application.FiindMinStepInMaze" />
+        <item index="4" class="java.lang.String" itemvalue="Application.FindAllAnagramsString" />
       </list>
     </recent_temporary>
   </component>
@@ -628,12 +611,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498242774081</updated>
-      <workItem from="1498242778394" duration="19304000" />
+      <workItem from="1498242778394" duration="22270000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1498322818491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1498322818491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19304000" />
+    <option name="totallyTimeSpent" value="22270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
@@ -653,7 +644,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -661,7 +652,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3985043" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43162394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -674,6 +665,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -772,7 +767,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="21" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -839,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FindDistanceBetweenTwoNods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
           <folding />
         </state>
       </provider>
