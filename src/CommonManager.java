@@ -12,30 +12,38 @@ public class CommonManager {
             this.name = name;
         }
 
-
+        @Override
+        public String toString() {
+            return "Employee{" +
+                    "name='" + name + '\'' +
+                    '}';
+        }
     }
 
-    public static Employee closestCommonManager(Employee ceo, Employee firstEmployee, Employee secondEmployee) {
+    public static Employee solve(Employee ceo, Employee firstEmployee, Employee secondEmployee) {
         if (ceo == null || firstEmployee == null || secondEmployee == null)
             return null;
-        if (!covers(ceo, firstEmployee) && covers(ceo, secondEmployee))
+        if (ceo.name.equalsIgnoreCase(firstEmployee.name) || ceo.name.equalsIgnoreCase(secondEmployee.name))
             return null;
-        Queue<Employee> workingQueue = new LinkedList<>();
-        workingQueue.offer(ceo);
-        Employee closestKnownManager = null;
-        while (!workingQueue.isEmpty()) {
-            Employee employee = workingQueue.poll();
-            if (covers(employee, firstEmployee) && covers(employee, secondEmployee)) {
-                closestKnownManager = employee;
-                for (Employee em : employee.reporters) {
-                    workingQueue.offer(em);
+        if (!hasPath(ceo, firstEmployee) && hasPath(ceo, secondEmployee))
+            return null;
+
+        Queue<Employee> queue = new LinkedList<>();
+        queue.offer(ceo);
+        Employee result = null;
+        while (!queue.isEmpty()) {
+            Employee currentEmployee = queue.poll();
+            if (hasPath(currentEmployee, firstEmployee) && hasPath(currentEmployee, secondEmployee)) {
+                result = currentEmployee;
+                for (Employee em : currentEmployee.reporters) {
+                    queue.offer(em);
                 }
             }
         }
-        return closestKnownManager;
+        return result.name.equalsIgnoreCase(ceo.name) ? null : result;
     }
 
-    public static boolean covers(final Employee manager, final Employee employee) {
+    private static boolean hasPath(final Employee manager, final Employee employee) {
         if (manager == null)
             return false;
         if (manager.name.equals(employee.name))
@@ -43,18 +51,17 @@ public class CommonManager {
         if (manager.reporters == null)
             return false;
 
-        boolean covers = false;
+        boolean hasPath = false;
         for (Employee em : manager.reporters) {
-            covers = covers || covers(em, employee);
+            hasPath = (hasPath || hasPath(em, employee)) ? true : false;
         }
-        return covers;
+        return hasPath;
     }
 
     public static void main(String[] args) {
         Employee samir = new Employee("samir");
         Employee dom = new Employee("dom");
         Employee michael = new Employee("michael");
-
 
         Employee peter = new Employee("peter");
         Employee porter = new Employee("porter");
@@ -70,9 +77,9 @@ public class CommonManager {
         Employee bill = new Employee("bill");
         bill.reporters = Arrays.asList(dom, samir, michael);
 
-        System.out.println(closestCommonManager(bill, milton, nina).name);
-        System.out.println(closestCommonManager(bill, nina, porter).name);
-        System.out.println(closestCommonManager(bill, nina, samir).name);
-        System.out.println(closestCommonManager(bill, peter, nina).name);
+        System.out.println(solve(bill, milton, nina) + " ==peter");
+        System.out.println(solve(bill, nina, porter) + " ==dom");
+        System.out.println(solve(bill, nina, samir) + " ==null (bill ceo)");
+        System.out.println(solve(bill, peter, nina) + " ==peter");
     }
 }
