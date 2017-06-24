@@ -86,6 +86,9 @@ public class FindDistanceBetweenTwoNods {
         System.out.println("Distance between 2 and 4 is : "
                 + solve(arrayTest1, 6, 2, 4));
 
+        System.out.println("Distance between 2 and 1 is : "
+                + solve(arrayTest1, 6, 2, 1));
+
         System.out.println("Distance between 45 and 20 is : "
                 + findDistanceInBST(root, 45, 20) + " == 3");
 
