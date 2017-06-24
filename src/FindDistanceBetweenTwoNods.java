@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class FindDistanceBetweenTwoNods {
 
@@ -15,12 +14,42 @@ public class FindDistanceBetweenTwoNods {
         }
         if (existedN1 == false || existedN2 == false) return -1;
 
-        Arrays.sort(array);
-        Node root = convertArrayToBST(array, 0, size - 1);
+        Node root = convertUnsortedArrayToBST(array, size);
         return findDistanceInBST(root, n1, n2);
     }
 
-    public static Node convertArrayToBST(int[] num, int start, int end) {
+
+    public static Node convertUnsortedArrayToBST(int[] nums, int size) {
+        if (size < 1) return null;
+        Node root = new Node(nums[0]);
+        for (int i = 1; i < size; i++) {
+            addAsChild(root, nums[i]);
+        }
+        return root;
+    }
+
+    private static void addAsChild(Node root, int x) {
+        Node current = root;
+        while (current != null) {
+            if (x < current.data) {
+                if (current.left != null) {
+                    current = current.left;
+                } else {
+                    current.left = new Node(x);
+                    return;
+                }
+            } else {
+                if (current.right != null) {
+                    current = current.right;
+                } else {
+                    current.right = new Node(x);
+                    return;
+                }
+            }
+        }
+    }
+
+/*    public static Node convertArrayToBST(int[] num, int start, int end) {
         if (start > end)
             return null;
         int mid = (start + end) / 2;
@@ -28,7 +57,7 @@ public class FindDistanceBetweenTwoNods {
         root.left = convertArrayToBST(num, start, mid - 1);
         root.right = convertArrayToBST(num, mid + 1, end);
         return root;
-    }
+    }*/
 
 
     public static int findDistanceInBST(Node root, int n1, int n2) {
@@ -73,34 +102,43 @@ public class FindDistanceBetweenTwoNods {
     }
 
     public static void main(String[] args) throws java.lang.Exception {
-        Node root = new Node(5);
+  /*      Node root = new Node(5);
         root.left = new Node(10);
         root.right = new Node(15);
         root.left.left = new Node(20);
         root.left.right = new Node(25);
         root.right.left = new Node(30);
         root.right.right = new Node(35);
-        root.left.right.right = new Node(45);
+        root.left.right.right = new Node(45);*/
 
         int[] arrayTest1 = {5, 6, 3, 1, 2, 4};
         System.out.println("Distance between 2 and 4 is : "
-                + solve(arrayTest1, 6, 2, 4));
+                + solve(arrayTest1, 6, 2, 4) + " ==3");
 
         System.out.println("Distance between 2 and 1 is : "
-                + solve(arrayTest1, 6, 2, 1));
+                + solve(arrayTest1, 6, 2, 1) + " ==1");
 
-        System.out.println("Distance between 45 and 20 is : "
+
+        System.out.println("Distance between 2 and 5 is : "
+                + solve(arrayTest1, 6, 2, 5) + " ==4");
+
+        System.out.println("Distance between 2 and 5 is : "
+                + solve(arrayTest1, 6, 2, 7) + " ==-1");
+
+
+      /*  System.out.println("Distance between 45 and 20 is : "
                 + findDistanceInBST(root, 45, 20) + " == 3");
 
 
-        System.out.println("Distance between 45 and 10 is : "
-                + findDistanceInBST(root, 45, 10) + " == 2");
+        System.out.println("Distance between 35 and 20 is : "
+                + findDistanceInBST(root, 35, 20) + " == 4");
 
 
-        System.out.println("Distance between 5 and 30 is : "
-                + findDistanceInBST(root, 5, 30) + " == 2");
+        System.out.println("Distance between 35 and 30 is : "
+                + findDistanceInBST(root, 35, 30) + " == 2");*/
 
 
+/*
         int[] array = {5, 10, 20, 25, 15, 30, 35, 45};
 
         System.out.println("Distance between 45 and 20 is : "
@@ -112,10 +150,11 @@ public class FindDistanceBetweenTwoNods {
         System.out.println("Distance between 35 and 30 is : "
                 + solve(array, 8, 35, 30));
 
+*/
 
     }
 
-    public static boolean isValidBST(Node root) {
+/*    public static boolean isValidBST(Node root) {
         return isValidBST(root, Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY);
     }
 
@@ -125,7 +164,7 @@ public class FindDistanceBetweenTwoNods {
         if (p.data <= min || p.data >= max)
             return false;
         return isValidBST(p.left, min, p.data) && isValidBST(p.right, p.data, max);
-    }
+    }*/
 }
 
 class Node {

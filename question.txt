@@ -1,0 +1,6 @@
+http://www.1point3acres.com/bbs/thread-225078-1-1.html
+
+楼主，请问是findDuplicate，  Merge sorted array和algorithmic crush这三道题吗
+
+merge sorted array: https://leetcode.com/problems/merge-sorted-array/#/description
+Find the Duplicate Number: http://www.geeksforgeeks.org/check-given-array-contains-duplicate-elements-within-k-distance/
