@@ -4,7 +4,7 @@ import java.util.List;
 public class FindAllAnagramsString {
 
     public static void main(String[] args) {
-        System.out.println(findAnagrams("cbaebabacd", "abc"));
+        System.out.println(findAnagrams("cbaebabacdbcas", "abc"));
     }
 
     public static List<Integer> findAnagrams(String big, String small) {
